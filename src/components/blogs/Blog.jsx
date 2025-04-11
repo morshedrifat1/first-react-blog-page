@@ -33,7 +33,7 @@ const Blog = ({blog,handleBookmark,handleMarkAsRead}) => {
           <div className="card-actions flex justify-between mt-3">
             <button onClick={()=>{handleMarkAsRead(blog.reading_time,blog.id);setMarkicon(false)}} className="btn btn-primary">Mark As Read</button>
             <button onClick={()=>{handleBookmark(blog);setMarkicon(true)}} className="btn bg-gray-300">
-                {markIcon ?<IoBookmarkSharp size={25}/> :<PiBookmarkSimpleLight size={25} />}
+                {markIcon ? <IoBookmarkSharp size={25}/> :<PiBookmarkSimpleLight size={25}/>}
             </button>
           </div>
         </div>
